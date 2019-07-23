@@ -10,8 +10,20 @@ gulp.task('compile-sass', function() {
 })
 
 gulp.task('move-js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery/jquery.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/tether/dist/js/tether.min.js','node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('src/js'))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('move-fonts', function() {
+    return gulp.src(['node_modules/font-awesome/fonts/*'])
+    .pipe(gulp.dest('src/fonts'))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('move-css', function() {
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.css'])
+    .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream())
 })
 
@@ -24,11 +36,11 @@ gulp.task('launch-server', ['compile-sass'], function() {
     browserSync.init({
         server: "./src"
     })
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'],['compile-sass'])
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','node_modules/font-awesome/scss/font-awesome.scss', 'src/scss/*.scss'],['compile-sass'])
     gulp.watch("src/*.html").on('change', browserSync.reload)
 })
 
 //run gulp
 //launch server and browser
 //execute js task
-gulp.task('default', ['move-js', 'launch-server'])
+gulp.task('default', ['move-js','move-fonts','move-css', 'launch-server'])
