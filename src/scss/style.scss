@@ -1,9 +1,51 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$bg-color: red;
+$primary-color: #3b5a76;
+$background-color: #ededed;
+$text-color: #363636;
+$font: 16px;
 
 body {
-    font: 100% $font-stack;
+    padding-bottom: 0;
+    font-family: 'Open-sans', 'Arial', 'Tahoma';
+    color: $text-color;
+    background: $background-color;
+    font-size: $font;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.primary,
+strong,
+h2 {
     color: $primary-color;
-    background: $bg-color;
+}
+
+.main-container {
+    background: white;
+    position: relative;
+    top: 80px;
+    margin-bottom: 80px;
+    padding:  0 30px 30px 30px;
+
+}
+
+header {
+    min-height: 80px;
+    overflow: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 1.4em;
 }
