@@ -25,7 +25,7 @@
           <form class="form-inline">
             <div class="form-group">
               <div class="form-group">
-                <label class="sr-only"for="exampleinputemail">Email address</label>
+                <label class="sr-only" for="exampleinputemail">Email address</label>
                 <input type="email" class="form-control" id="exampleinputemail" placeholder="Enter Email">
               </div>
               <div class="form-group">
@@ -45,10 +45,11 @@
     </div>
   </header>
 
-<!-- Navagation for site -->
+  <!-- Navagation for site -->
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navagation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navagation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExample09">
@@ -77,6 +78,7 @@
   <section>
     <div class="container">
       <div class="row">
+        <!-- Wall section (left side of page) -->
         <div class="col-lg-8">
           <div class="card">
             <div class="card-heading">
@@ -92,17 +94,277 @@
                 <div class="float-right">
                   <div class="btn-group">
                     <button type="button" class="btn btn-outline-secondary">
-                      <i class="fa fa-pencil"></i> Text
-                    </button>
-                    
+                      <i class="fa fa-pencil"></i> Text</button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-file-image-o"></i> Image</button>
+                    <button type="button" class="btn btn-outline-secondary">
+                      <i class="fa fa-file-video-o"></i> Video</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+
+          <div class="card post">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <a class="post-avatar thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-fluid">
+                    <div class="text-center">DevUser1</div>
+                  </a>
+                  <div class="likes text-center">7 Likes</div>
+                </div>
+                <!-- col-sm-2 end -->
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget ante eget feugiat.
+                        Praesent
+                        adipiscing tortor eu tincidunt tempus. Sed convallis est in ante sodales, sit amet consectetur
+                        leo
+                        commodo. </p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <!-- bubble end -->
+                  <p class="post-actions">
+                    <a href="#">Comment</a> -
+                    <a href="#">Like</a> -
+                    <a href="#">Follow</a> -
+                    <a href="#">Share</a>
+                  </p>
+                  <div class="comment-form">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
+                      </div>
+                      <button type="submit" class="btn btn-outline-secondary">Add</button>
+                    </form>
+                  </div>
+                  <!-- comment form end -->
+                  <div class="clearfix"></div>
+
+                  <div class="comments">
+                    <div class="comment">
+                      <a class="comment-avatar pull-left" href="#">
+                        <img src="img/user.png" class="img-fluid">
+                      </a>
+                      <div class="comment-text">
+                        <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="comment">
+                      <a class="comment-avatar pull-left" href="#">
+                        <img src="img/user.png" class="img-fluid">
+                      </a>
+                      <div class="comment-text">
+                        <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card post">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <a class="post-avatar thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-fluid">
+                    <div class="text-center">DevUser2</div>
+                  </a>
+                  <div class="likes text-center">7 Likes</div>
+                </div>
+                <!-- col-sm-2 end -->
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget ante eget feugiat.
+                        Praesent
+                        adipiscing tortor eu. </p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <!-- bubble end -->
+                  <p class="post-actions">
+                    <a href="#">Comment</a> -
+                    <a href="#">Like</a> -
+                    <a href="#">Follow</a> -
+                    <a href="#">Share</a>
+                  </p>
+                  <div class="comment-form">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
+                      </div>
+                      <button type="submit" class="btn btn-outline-secondary">Add</button>
+                    </form>
+                  </div>
+                  <!-- comment form end -->
+                  <div class="clearfix"></div>
+
+                  <div class="comments">
+                    <div class="comment">
+                      <a class="comment-avatar pull-left" href="#">
+                        <img src="img/user.png" class="img-fluid">
+                      </a>
+                      <div class="comment-text">
+                        <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card post">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <a class="post-avatar thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-fluid">
+                    <div class="text-center">DevUser3</div>
+                  </a>
+                  <div class="likes text-center">2 Likes</div>
+                </div>
+                <!-- col-sm-2 end -->
+                <div class="col-sm-10">
+                  <div class="bubble">
+                    <div class="pointer">
+                      <p>Adipiscing elit. In tincidunt eget ante eget feugiat. Praesent adipiscing tortor eu tincidunt
+                        tempus.
+                        Sed convallis est in ante sodales, sit amet consectetur leo commodo. </p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div>
+                  <!-- bubble end -->
+                  <p class="post-actions">
+                    <a href="#">Comment</a> -
+                    <a href="#">Like</a> -
+                    <a href="#">Follow</a> -
+                    <a href="#">Share</a>
+                  </p>
+                  <div class="comment-form">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
+                      </div>
+                      <button type="submit" class="btn btn-outline-secondary">Add</button>
+                    </form>
+                  </div>
+                  <!-- comment form end -->
+                  <div class="clearfix"></div>
+
+                  <div class="comments">
+                    <div class="comment">
+                      <a class="comment-avatar pull-left" href="#">
+                        <img src="img/user.png" class="img-fluid">
+                      </a>
+                      <div class="comment-text">
+                        <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="comment">
+                      <a class="comment-avatar pull-left" href="#">
+                        <img src="img/user.png" class="img-fluid">
+                      </a>
+                      <div class="comment-text">
+                        <p>Sed convallis est in ante sodales, sit amet consectetur leo commodo.</p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col-md-8 end -->
+        <!-- END Wall section (left side of page) -->
+
+        <div class="col-lg-4">
+          <div class="card friends">
+            <div class="card-heading">
+              <h6 class="card-title">My Friends</h6>
+            </div>
+            <div class="card-body">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="thumbnail" href="profile.html">
+                    <img src="img/user.png" class="img-thumbnail">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+
+      </div><!-- <div class="row"> end-->
+    </div><!-- <div class="container"> end-->
 
   </section>
 
