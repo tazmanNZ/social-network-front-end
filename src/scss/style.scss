@@ -125,3 +125,26 @@ header {
     }
 }
 
+.group-item {
+    padding-bottom: .75rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.groups img {
+    width: 5rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+footer {
+    background: #f4f4f4;
+    height: 5.75rem;
+    color: #04519b;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: 7px solid #04519b;
+}

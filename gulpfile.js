@@ -10,7 +10,7 @@ gulp.task('compile-sass', function() {
 })
 
 gulp.task('move-js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/tether/dist/js/tether.min.js','node_modules/jquery/dist/jquery.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/tether/dist/js/tether.min.js','node_modules/jquery/dist/jquery.min.js', 'node_modules/ekko-lightbox/dist/ekko-lightbox.min.js'])
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.stream())
 })
@@ -22,7 +22,7 @@ gulp.task('move-fonts', function() {
 })
 
 gulp.task('move-css', function() {
-    return gulp.src(['node_modules/font-awesome/css/font-awesome.css'])
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.css', 'node_modules/ekko-lightbox/dist/ekko-lightbox.css'])
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream())
 })
